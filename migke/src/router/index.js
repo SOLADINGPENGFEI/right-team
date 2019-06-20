@@ -28,6 +28,8 @@ const DynamicDetail = resolve => require(['@/views/index/dynamicDetail'], resolv
 // 解决方案
 const CaseSolution = resolve => require(['@/views/successCase/caseSolution'], resolve)
 
+const Warehouse= resolve => require(['@/views/warehouse/index'], resolve)
+
 const constantRouterMap = [{
         path: '/',
         // name: 'Home',
@@ -87,8 +89,12 @@ const constantRouterMap = [{
                 name: 'CaseSolution',
                 path: '/caseSolution',//成功案例
                 component: CaseSolution
+            },
+            {
+                name: 'Warehouse',
+                path: '/warehouse', //6.仓库物流
+                component: Warehouse
             }
-
         ]
     },
 
