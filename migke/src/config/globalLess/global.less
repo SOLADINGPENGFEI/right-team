@@ -1,0 +1,56 @@
+@orange: #000;
+@width: 12rem;
+
+
+.animate(@animate_name) {
+    display                    : flex;
+    -webkit-animation-duration : 0.18s;
+    animation-duration         : 0.18s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode        : both;
+    animation-name             : @animate_name;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    75% {
+        transform: rotate(135deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotate_return {
+    from {
+        transform: rotate(180deg);
+    }
+
+    25% {
+        transform: rotate(135deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    75% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

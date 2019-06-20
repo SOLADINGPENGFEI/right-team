@@ -1,0 +1,99 @@
+.content_title>span {
+    position: relative;
+    text-align: center;
+    display: block;
+    color: #3B3B3C;
+    font-weight: bold;
+    font-size: 0.26rem;
+}
+
+.content_title>span::before,
+.content_title>span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 1.39rem;
+    height: 1.1px;
+    background: #999999;
+}
+
+.content_title>span::before {
+    margin-left: -2.31rem;
+}
+
+.content_title>span::after {
+    margin-left: 0.92rem;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.content,
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main,
+.banner {
+    margin-top: 0.84rem;
+}
+
+::-webkit-input-placeholder {
+    /*Webkit browsers*/
+    font-size: 0.16rem;
+}
+
+:-moz-placeholder {
+    /*Mozilla Firefox 4 to 8*/
+    font-size: 0.16rem;
+}
+
+::moz-placeholder {
+    /*Mozilla Firefox 19+*/
+    font-size: 0.16rem;
+}
+
+:-ms-input-placeholder {
+    /*Internet Explorer 10+*/
+    font-size: 0.16rem;
+}
+
+.header {
+    padding: 0.08rem 0;
+}
+
+.navico,
+.homeico {
+    display: none;
+}
+
+@media all and (max-width:1450px) {}
+
+@media (min-width: 1230px) {}
+
+@media all and (max-width:1200px) {}
+
+@media (max-width: 1250px) {
+    .wrapper {
+        width:88%;
+    }
+}
+
+@media all and (min-width:0) and (max-width:768px) {
+    .wrapper {
+        width: 94%;
+    }
+}
+
+@media (max-width: 750px) and (min-width: 0) {
+    .main {
+        margin-top: 1.29rem;
+    }
+    .content_title>span {
+        font-size: 0.36rem;
+    }
+}

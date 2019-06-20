@@ -1,0 +1,171 @@
+.el-pagination button, .el-pagination span {
+    border-radius: 0;
+    width: 0.8rem;
+    height: 0.4rem;
+    text-align: center;
+    line-height: 0.8rem;
+}
+
+.el-pagination button, .el-pagination span:not([class*="suffix"]) {
+    height: 0.4rem;
+    line-height: 0.4rem;
+}
+
+.el-pagination span {
+    border-radius: 0;
+}
+
+.el-pagination.is-background .el-pager li {
+    border-radius: 0;
+    width: 0.4rem;
+    height: 0.4rem;
+    text-align: center;
+    line-height: 0.4rem;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    background: #0d6db9;
+}
+
+.el-icon-close {
+    cursor: pointer;
+}
+
+.el-textarea__inner, .el-input-group__append, .el-button {
+    border-radius: 0;
+    resize: none;
+}
+
+.el-input__inner:focus, .el-textarea__inner:focus, .el-select .el-input__inner:focus {
+    border-color: #0d6db9;
+}
+
+.el-select .el-input.is-focus .el-input__inner {
+    border-color: #0d6db9;
+}
+
+.el-button--primary {
+    background: #096ab6;
+    border-color: #096ab6;
+    border-radius: 0;
+}
+
+.teasing_sort .el-dropdown-link {
+    cursor: pointer;
+    color: #222222;
+    font-size: 0.14rem;
+}
+
+.teasing_sort .el-dropdown {
+    border: 0.01rem solid #f3f3f3;
+    width: 1.26rem;
+    height: 0.28rem;
+    line-height: 0.28rem;
+    padding: 0 0 0 0.4rem;
+}
+
+.teasing_sort .el-icon-arrow-down {
+    font-size: 12px;
+}
+
+.teasing_sort .el-dropdown-menu__item:focus, .teasing_sort .el-dropdown-menu__item:not(.is-disabled):hover {
+    color: #222222;
+}
+
+.el-dropdown-menu {
+    border-radius: 0;
+    border: 0.01rem solid #f3f3f3;
+    width: 1.26rem;
+}
+
+.big_box .el-input {
+    border-radius: 0;
+}
+
+.big_box .el-input .el-input__count .el-input__count-inner {
+    background: rgba(0, 0, 0, 0);
+}
+
+.big_box .el-textarea__inner {
+    height: 1.6rem;
+}
+
+.big_box .el-form-item {
+    margin: 0 0 0.35rem;
+}
+
+.big_box .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.big_box .avatar-uploader .el-upload:hover {
+    border-color: #096bb6;
+}
+
+.big_box .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 1rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    text-align: center;
+}
+
+.big_box .avatar {
+    width: 1rem;
+    height: 1.4rem;
+    display: block;
+}
+
+@media (min-width: 751px) {
+    .el-input__inner {
+        border-radius: 0;
+        background: #fff;
+    }
+}
+@media (max-width: 750px) and (min-width: 0){
+    .el-input__inner {
+        border-radius: 0;
+        background: #303940;
+    }
+    .el-textarea__inner{
+        background: #303940;
+        height: .7rem;
+    }
+}
+
+.jump_job_header ul button {
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    background: #0d6db9;
+  }
+  
+  .jump_job_search .el-dropdown-link {
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.14rem;
+  }
+  
+  .jump_job_search .el-dropdown {
+    border: 0.01rem solid #f3f3f3;
+    width: 2rem;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    text-align: center;
+    background: #0d6db9;
+    color: #fff;
+  }
+  
+  .jump_job_search .el-icon-arrow-down {
+    font-size: 12px;
+  }
+  
+  .jump_job_search .el-dropdown-menu__item:focus,
+  .jump_job_search .el-dropdown-menu__item:not(.is-disabled):hover {
+    color: #222222;
+  }
