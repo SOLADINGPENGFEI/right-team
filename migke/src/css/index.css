@@ -12,17 +12,17 @@
     content: '';
     position: absolute;
     top: 50%;
-    width: 1.39rem;
-    height: 1.1px;
+    width: 1.4rem;
+    height: 1px;
     background: #999999;
 }
 
 .content_title>span::before {
-    margin-left: -2.31rem;
+    margin-left: -1.72rem;
 }
 
 .content_title>span::after {
-    margin-left: 0.92rem;
+    margin-left: 0.37rem;
 }
 
 .wrapper {
