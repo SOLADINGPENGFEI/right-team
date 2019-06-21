@@ -107,7 +107,6 @@ export default {
         /* overflow: visible; */
         transition: all .3s ease 0s;
         li{
-             
             float: none;
             color: #fff;
             font-size: 0.18rem;
