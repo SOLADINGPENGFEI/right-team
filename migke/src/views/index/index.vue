@@ -8,11 +8,11 @@
         <span>主营业务</span>
       </h3>
       <ul class="business_ul">
-        <li v-for="(item,index) in 3" :key="index" class="fadeInUp">
+        <li class="fadeInUp1">
           <div class="business">
-            <h3>
+            <!-- <h3>
               <img src="../../img/index_woman.png" alt>
-            </h3>
+            </h3> -->
             <h2>
               <a href>明科商业智能开放平台</a>
             </h2>
@@ -299,45 +299,11 @@ export default {
     text-align: center;
   }
   .business_ul {
-    display: flex;
     margin: 0.69rem 0 1.7rem;
   }
-  .business_ul > li {
-    float: left;
-    display: inline-block;
-    text-align: center;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 0px 38px 0px rgba(79, 78, 80, 0.15);
-    flex: 1;
-    padding-bottom: 0.41rem;
-    box-sizing: border-box;
-    -webkit-transition: transform 1s, opacity 1s;
-    -moz-transition: transform 1s, opacity 1s;
-    -o-transition: transform 1s, opacity 1s;
-    transition: transform 1s, opacity 1s;
-    h3 {
-      img {
-        transition: all 0.6s;
-        -webkit-transition: all 0.6s;
-      }
-    }
-    h2 {
-      margin: 0.35rem 0 0.2rem;
-      a {
-        font-size: 0.18rem;
-        text-decoration: underline;
-      }
-    }
-    p {
-      color: #838383;
-      font-size: 0.14rem;
-    }
-    p:nth-child(4) {
-      margin-top: 0.04rem;
-    }
-  }
-  .fadeInUp {
-    position: relative;
+  .business_ul > li.fadeInUp1 {
+      width: 0.75rem;
+      margin: 0 auto;
   }
   .business_box {
     position: absolute;

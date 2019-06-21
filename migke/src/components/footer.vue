@@ -11,26 +11,25 @@
                 <div class="footer_right_div">
                     <h4>公司官网</h4>
                      <p class="footer_right_website">
-                        <i><img src="../img/call.png" /></i>
+                        <i><img src="../img/网址.png" /></i>
                         <span>www.minkesoft.com</span>
                     </p>
                     <p class="footer_right_website">
-                        <i><img src="../img/call.png" /></i>
+                        <i><img src="../img/邮件.png" /></i>
                         <span>service@minkesoft.com</span>
                     </p>
                     <p class="footer_right_website">
-                        <i><img src="../img/call.png" /></i>
+                        <i><img src="../img/电话.png" /></i>
                         <span>400-189-1819</span>
                     </p>
                 </div>
                
             </div>
-
         </div>
         <div class="footer_bottom">
             <div class="footer_bottom_icon">
-                <span></span>
-                <span></span>
+                <span><img src="../img/微信 (3).png" alt=""></span>
+                <span><img src="../img/QQ (1).png" alt=""></span>
             </div>
             <p>北京市朝阳区建国路88号SOHO现代城2号楼29层</p>
             <p>北京市通州区新华北街156号保利大都汇6-808</p>
@@ -113,9 +112,6 @@ export default {
     }
     
 }
-.footer_bottom{
-    display: none;
-}
 
 @media (max-width: 750px) and (min-width: 0){
     .footer_left,.footer_right{
@@ -148,6 +144,7 @@ export default {
         margin-top: 1.25rem;
         .footer_bottom_icon{
             padding: 0.35rem 0;
+            box-sizing: border-box;
             text-align: center;
             border-bottom: 1px solid rgba(169,207,226,0.17);
             margin-bottom: 0.24rem;
@@ -159,17 +156,26 @@ export default {
                 width: 0.47rem;
                 height: 0.47rem;
                 border:1px solid #fff;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
             }
+        }
+        p:first-child{
+            margin-top: 0.61rem;
         }
         p{
             text-align: center;
             font-size: 0.24rem;
             line-height: 0.32rem;
-            color: #fff;
+            color: rgba(255,255,255,1);
         }
         p:last-child{
             margin-top: 0.32rem;
             padding-bottom: 1.07rem;
+            box-sizing: border-box;
         }
     }
 }
