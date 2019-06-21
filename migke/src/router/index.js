@@ -30,6 +30,8 @@ const CaseSolution = resolve => require(['@/views/successCase/caseSolution'], re
 
 const Warehouse= resolve => require(['@/views/warehouse/index'], resolve)
 
+const FactoryNumber = resolve => require(['@/views/factoryNumber/index'], resolve)
+
 const constantRouterMap = [{
         path: '/',
         // name: 'Home',
@@ -94,6 +96,11 @@ const constantRouterMap = [{
                 name: 'Warehouse',
                 path: '/warehouse', //6.仓库物流
                 component: Warehouse
+            },
+            {
+                name: 'FactoryNumber',
+                path: '/factoryNumber',//5 工厂制造数字化  版本1 
+                component: FactoryNumber
             }
         ]
     },

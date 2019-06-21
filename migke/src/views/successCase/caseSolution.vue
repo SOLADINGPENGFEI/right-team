@@ -8,7 +8,7 @@
             <p>AI与IoT技术最终会将物理世界改造为万物互联世界，同时建立一个全新的数字化世界。基于自身核心的AI算法能力与软硬件结合能力，明科面向核心应用场景，构建了仓储物流、智能制造和商城营销三大业务体系，同时也通过开放基础人工智能算法赋能开发者实现应用创新。
             </p>
             <div class="content_solution">
-                <dl class="solution_box" v-for="(item,i) in 3" :key="i">
+                <dl class="solution_box">
                     <dt class="solution_box_in">
                         <h3><span>仓储物流</span></h3>
                         <img src="../../img/矩形 43.png" />
@@ -20,7 +20,55 @@
                                 <a href="/">智慧仓流</a>
                                 <a href="/">智慧仓流</a>
                             </div>
+                            <img src="../../img/图层 2.png" alt="">
+                        </div>
+                    </dt>
+                </dl>
+                <dl class="solution_box">
+                    <dt class="solution_box_in">
+                        <h3><span>仓储物流</span></h3>
+                        <img src="../../img/矩形 43.png" />
+                        <p>综合了软件系统、 条码应用、硬件系统、无线网络、系统扩展接 口等多种技术，通过无线移动终端设备，智能信息化应用渗透到仓库作业的每个细节及仓库现场
+                        </p>
+                        <div class="solution_box-bom">
                             <img src="../../img/solution.png" alt="">
+                            <div class="solution_box-bom_left">
+                                <a href="/">智慧仓流</a>
+                                <a href="/">智慧仓流</a>
+                                <a href="/">智慧仓流</a>
+                            </div>
+                        </div>
+                    </dt>
+                </dl>
+                <dl class="solution_box">
+                    <dt class="solution_box_in">
+                        <h3><span>仓储物流</span></h3>
+                        <img src="../../img/矩形 43.png" />
+                        <p>综合了软件系统、 条码应用、硬件系统、无线网络、系统扩展接 口等多种技术，通过无线移动终端设备，智能信息化应用渗透到仓库作业的每个细节及仓库现场
+                        </p>
+                        <div class="solution_box-bom">
+                            <div class="solution_box-bom_left">
+                                <a href="/">智慧仓流</a>
+                                <a href="/">智慧仓流</a>
+                                <a href="/">智慧仓流</a>
+                            </div>
+                            <img src="../../img/图层 4.png" alt="">
+                        </div>
+                    </dt>
+                </dl>
+                <dl class="solution_box">
+                    <dt class="solution_box_in">
+                        <h3><span>仓储物流</span></h3>
+                        <img src="../../img/矩形 43.png" />
+                        <p>综合了软件系统、 条码应用、硬件系统、无线网络、系统扩展接 口等多种技术，通过无线移动终端设备，智能信息化应用渗透到仓库作业的每个细节及仓库现场
+                        </p>
+                        <div class="solution_box-bom">
+                            <img src="../../img/图层 5.png" alt="">
+                            <div class="solution_box-bom_left">
+                                <a href="/">智慧仓流</a>
+                                <a href="/">智慧仓流</a>
+                                <a href="/">智慧仓流</a>
+                            </div>
                         </div>
                     </dt>
                 </dl>
