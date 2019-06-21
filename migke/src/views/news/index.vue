@@ -5,27 +5,28 @@
         </div>
         <div class="wrapper">
             <div class="contentTitle">
-                <i class="contentTitle_before"></i>  
-                <span v-for="(tab, i) in tabs" :key="i" :class="{active:cur==i}"
-                @click="cur=i">{{tab.name}}
+                <i class="contentTitle_before"></i> 
+                <span  :class="{active:cur==0}">全部</span>
+                <span class="span" v-for="(tab, i) in tabs" :key="i"
+                 @click="cur=i">{{tab.name}}
                 </span>
                 <i  class="contentTitle_after"></i></div>
-            <div class="content">
+                <div class="content">
                 <ul class="news_ul">
-                    <li v-for="(item,index) in 3" :key="index">
-                        <h3><img src="../../img/dynamic.png" alt=""></h3>
-                        <div class="news_ul_card"> 
+                    <li  v-for="(item,index) in list " :key="index">
+                        <div class="news_ul_card" :style="{'background': 'url('+item.img+') no-repeat center '}">
                             <h2>                        
-                                <span>明科产品质量安全追溯系统解决方案</span>
+                                <span>{{item.name}}</span>
                                 <span>2017-03-08</span>
                             </h2>
-                            <p>明科公司面向生产型企业专门研发了一套质量监管系统，针对商品的生产日期、有效期批号等信息，创建唯一可识别条码，进行产品质量追溯，再根据此识别码的包装关联码查询流通过程中的商品流...</p>
+                            <p>{{item.title}}</p>
                         </div>
                     </li>
                 </ul>
             </div>
             <el-pagination background layout="prev, pager, next" :total="200"></el-pagination>
             <button>查看更多</button>
+            
         </div>
 
     </div>
@@ -38,9 +39,6 @@ export default {
             cur: 0,
             tabs:[
                 {
-                    name:'全部'
-                },
-                {
                     name:'企业资讯'
                 },
                 {
@@ -49,8 +47,30 @@ export default {
                 {
                     name:'解决方案'
                 }
+            ],
+            list:[
+                {
+                    img:require('../../img/企业资讯.png'),
+                    title:"明科公司面向生产型企业专门研发了一套质量监管系统，针对商品的生产日期、有效期批号等信息，创建唯一可识别条码，进行产品质量追溯，再根据此识别码的包装关联码查询流通过程中的商品流...",
+                    name:"明科产品质量安全追溯系统解决方案"
+                },
+                 {
+                    img:require('../../img/公司活动.png'),
+                    title:"9月22日上午，宝时得电商平台项目启动会在苏州厅隆重召开，专业工具营销中心朱总、财务张总、信息化管理部丁总，携项目组团队参加了此次会议。北京明科普华副总经理张富贵，携顾问代表4人出席了会议。",
+                      name:"宝时得电商平台项目启动会议隆重举行"
+                }, 
+                {
+                    img:require('../../img/解决方案.png'),
+                    title:'明科服务跟踪系统MK-SES 是由明科公司首创的基于自动识别技术的服务系统，它能让企业能够更好的为用户提供更人性化的跟踪服务，并且能有效的降低服务成本。',
+                      name:"明科售后服务跟踪系统解决方案"
+
+                },
+                 {
+                    img:require('../../img/企业资讯@2x.png'),
+                    title:'明科公司面向生产型企业专门研发了一套质量监管系统，针对商品的生产日期、有效期、批号等信息，创建唯一可识别条码，进行产品质量追溯，再根据此识别码的包装关联码，查询流通过程中的商品流向 ...',
+                    name:"明科产品质量安全追溯系统解决方案"
+                }
             ]
-            
         }
     },
     methods: {
@@ -66,6 +86,19 @@ export default {
 
 <style lang="less" scoped>
 @media (max-width: 750px) and (min-width: 0){
+  .banner{
+      width: 7.5rem;
+      height:4.0rem;
+      outline: none;
+      img{
+          width: 100%;
+          height: 100%;
+      }
+  }
+  .span{
+      background:rgba(244,244,244,1);
+      border:0.02rem solid rgba(215,215,215,1);
+  }
     .wrapper{
         width: 100%;
     }
@@ -83,21 +116,30 @@ export default {
     .news_ul{
         width: 100%;
         padding: 0 4%;
+         margin-left: 0.2rem;
         li{
-            border: 1px dashed #000;
+            // border: 1px dashed #000;
             margin-bottom: .3rem;
-            img{
-                width: 100%;
-                height: 3.4rem;
+           
+          
+            div{
+             width: 6.56rem;
+             height: 6.56rem;
+             position: relative;
+             border: 1px dashed #000;
             }
             p{
                 font-size: .22rem;
                 padding: .2rem;
                 color:#676767;
+                position: absolute;
+                top: 4.5rem;
             }
         }
         h2{
             width: 100%;
+            position: absolute;
+            top: 3.2rem;
             span{
                 display: block;
             }
